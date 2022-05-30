@@ -30,10 +30,3 @@ console.log(allNames); //['Williams', 'Johnson', 'Smith', 'Bob', 'Mark', 'Mary',
 
 // splice ------------- remove element from the array -- mutates the original array
 // ============  first parameter is the index where to start removing elements, second parameter is the number of elements to remove, and the rest are the elements to add
-
-allNames.splice(2, 1);
-console.log(allNames); // ["Williams", "Johnson","Bob", "Mark","Mary","Jane","John"]
-allNames.splice(2, 1, 'Smith');
-console.log(allNames); //[ "Williams","Johnson","Bob","Mark","Mary","Jane","John"]
-allNames.splice(4, 2);
-console.log(allNames); //['Williams', 'Johnson', 'Bob', 'Mark', 'Mary', 'Jane', 'John'];
