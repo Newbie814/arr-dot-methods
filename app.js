@@ -56,3 +56,29 @@ let brotherFullNames2 = brotherNames.map((name) => {
 console.log(brotherFullNames2); //['Matt Woodard', 'Trey Woodard', 'Josh Woodard']
 
 // functions, return, if, arrays, for loop
+
+const gas = [20, 30, 40, 50, 60];
+
+const food = [10, 40, 50];
+
+function calculateTotal(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
+}
+
+const gasTotal = calculateTotal(gas);
+console.log(gasTotal); //200
+const foodTotal = calculateTotal(food);
+console.log(foodTotal); //100
+
+const allTotal = calculateTotal(gas.concat(food));
+console.log(allTotal); //300
+
+console.log({
+  gas: gasTotal,
+  food: foodTotal,
+  all: allTotal,
+});
