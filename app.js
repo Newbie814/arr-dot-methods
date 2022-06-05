@@ -30,3 +30,29 @@ console.log(allNames); //['Williams', 'Johnson', 'Smith', 'Bob', 'Mark', 'Mary',
 
 // splice ------------- remove element from the array -- mutates the original array
 // ============  first parameter is the index where to start removing elements, second parameter is the number of elements to remove, and the rest are the elements to add
+allNames.splice(2, 1);
+console.log(allNames); // ["Williams", "Johnson","Bob", "Mark","Mary","Jane","John"]
+allNames.splice(2, 1, 'Smith');
+console.log(allNames); //[ "Williams","Johnson","Bob","Mark","Mary","Jane","John"]
+allNames.splice(4, 2);
+console.log(allNames); //['Williams', 'Johnson', 'Bob', 'Mark', 'Mary', 'Jane', 'John'];
+
+// arrays and for loop
+
+const brotherNames = ['Matt', 'Trey', 'Josh'];
+const brotherLastNames = 'Woodard';
+
+let brotherFullNames = [];
+
+for (let i = 0; i < brotherNames.length; i++) {
+  brotherFullNames.push(brotherNames[i] + ' ' + brotherLastNames);
+}
+console.log(brotherFullNames); //['Matt Woodard', 'Trey Woodard', 'Josh Woodard']
+
+let brotherFullNames2 = brotherNames.map((name) => {
+  return name + ' ' + brotherLastNames;
+});
+
+console.log(brotherFullNames2); //['Matt Woodard', 'Trey Woodard', 'Josh Woodard']
+
+// functions, return, if, arrays, for loop
